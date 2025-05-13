@@ -145,6 +145,15 @@ just to keep everything I do not want to add to github in one file in one place.
 I tested the front-end by typing Hello in the body of my app.js file in the front-end folder.
 
 
-you can use npm start to start the back-end. (work in progress)
+update:
+
+After successfully tesing the front-end, I will now focus on creating pages in it.
+I started to create routes for my app in the front-end.
+I do this by creating a folder in my src folder and naming it pages, after that I created 3 files, 
+Books.jsx, Add.jsx, and Update.jsx.
+
+
+you can use npm start to start the back-end and front-end. (work in progress)
+
 
 
