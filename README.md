@@ -147,10 +147,24 @@ I tested the front-end by typing Hello in the body of my app.js file in the fron
 
 update:
 
-After successfully tesing the front-end, I will now focus on creating pages in it.
-I started to create routes for my app in the front-end.
-I do this by creating a folder in my src folder and naming it pages, after that I created 3 files, 
+After successfully testing the front-end, I will now focus on creating pages and routing in it.
+I installed react-router-dom in my front-end.
+After that I created a folder in my src folder and naming it pages, after that I created 3 files, 
 Books.jsx, Add.jsx, and Update.jsx.
+
+The Books.jsx file inside the pages/ folder defines the main page component for the application. It returns a placeholder.
+I did this for the Add and Update files as well.
+
+update:
+
+I used npm i axios in my front-end. axios lets us make an api request using a react app.
+
+What I am planning on doing I will fetch all data using my back-end server. 
+
+I want the books page to show all the books.
+
+what I did in the Books.jsx page
+was fetche and display all books from http://localhost:3001/books. Each book shows its cover, title, description, and I created a newly added price field (an integer and not null) for later. Also added A link to navigate to the /add page for adding new books.
 
 
 you can use npm start to start the back-end and front-end. (work in progress)
