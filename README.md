@@ -167,6 +167,33 @@ what I did in the Books.jsx page
 was fetche and display all books from http://localhost:3001/books. Each book shows its cover, title, description, and I created a newly added price field (an integer and not null) for later. Also added A link to navigate to the /add page for adding new books.
 
 
+update: 
+
+This time I am now working on the Add.jsx page in the front-end. Goal is to add a new book.
+This page allows users to create and submit a new book entry.
+
+I Set up a form using React state (useState) to collect book details: title, desc, price, and cover.
+
+I created Handles form input changes and updates the state in real time.
+
+I created an on clicking the Add button to send a POST request to http://localhost:3001/books to save the new book to the backend.
+
+After successfully adding the book, the page redirects the user back to the homepage using useNavigate from react-router-dom. 
+
+I created a style.css file to style the layout and presentation of the app. Here's what I styled:
+
+.App: Centers the content both vertically and horizontally using Flexbox.
+
+.books: Displays all book entries in a row using Flexbox.
+
+.book: Allows each book to take equal space within the row.
+
+img: Sets a fixed size for book cover images and ensures they maintain aspect ratio using object-fit. A background color was also added for visual clarity.
+
+Also I added an delete and update button in my Books.jsx page in my front-end.
+For now they do nothing but I styled the buttons.
+
+
 you can use npm start to start the back-end and front-end. (work in progress)
 
 
