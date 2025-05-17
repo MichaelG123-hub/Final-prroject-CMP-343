@@ -193,6 +193,16 @@ img: Sets a fixed size for book cover images and ensures they maintain aspect ra
 Also I added an delete and update button in my Books.jsx page in my front-end.
 For now they do nothing but I styled the buttons.
 
+update:
+
+The goal for today is to delete books.
+
+In the backend, I created a DELETE endpoint that receives a book's ID and removes the corresponding record from the database. This allows the server to handle delete requests from the client side.
+
+On the frontend, each book displayed has a Delete button. When a user clicks the button, a request is sent to the backend to delete the book. Once the operation is complete, the page reloads to reflect the updated list of books.
+
+
+
 
 you can use npm start to start the back-end and front-end. (work in progress)
 
