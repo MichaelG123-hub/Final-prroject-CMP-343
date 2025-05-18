@@ -69,6 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
 
+My Full-Stack App:
+
+I created an App called Book Shop, emulating the feel of going to an online Book store.
+What you can do:
+
+Add a book, Update a book, and finally delete a book.
 
 I am replicating a tutorial from youtube. 
 
@@ -199,12 +205,27 @@ The goal for today is to delete books.
 
 In the backend, I created a DELETE endpoint that receives a book's ID and removes the corresponding record from the database. This allows the server to handle delete requests from the client side.
 
-On the frontend, each book displayed has a Delete button. When a user clicks the button, a request is sent to the backend to delete the book. Once the operation is complete, the page reloads to reflect the updated list of books.
+update: 
+
+Now working on the update button.
+
+In the Books component, I updated the Update button so that when it's clicked, it navigates to a dynamic route based on the book’s ID.
+I also went into App.js and added a route for /update/:id that loads the Update component. Inside that component, I retrieved the book ID from the URL and used it to fetch and edit the specific book’s data.
+This allows me or anyone to update the details of any book directly from the frontend.
+
+After that I decided to create a form, just like with Add.jsx in Update.jsx, by copy and pasting everything I have in Add.jsx to
+Update.jsx with some small changes.
+
+After this I spend some time adding style to the update form in the style.css page.
+
+After styling the update form I went into the index.js file in the back-end created a PUT endpoint at /books/:id. This endpoint takes the book ID from the URL and the updated book data from the request body. I wrote a SQL query that updates the book's title, description, price, and cover in the database. If the query runs successfully, the server responds with a confirmation message.
+
+After this I went back to the Update.jsx file and I used useLocation from React Router to extract the book ID from the URL. When the user fills out the form and clicks the update button, a PUT request is sent to the backend with the updated book information. If the update is successful, I redirect the user back to the main book list using useNavigate.
 
 
 
 
-you can use npm start to start the back-end and front-end. (work in progress)
+you can use npm start to start the back-end and front-end to run this app. (work in progress)
 
 
 
